@@ -1,0 +1,14 @@
+
+.custom-cart{
+    color: white;
+    margin-bottom: 12px;
+    
+}
+
+.cart-container button{
+    background-color:transparent;
+    border: none;
+}
+.cart-container{
+    margin-right: none;
+}
