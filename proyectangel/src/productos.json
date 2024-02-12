@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "HELLDIVERS 2",
+    "description": "HELLDIVERS 2 Código de Steam Key GLOBAL",
+    "stock": 50,
+    "price": 36,
+    "category": "Pc",
+    "image": "../src/assets/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "LEGO: Marvel Super Heroes",
+    "description": "LEGO: Marvel Super Heroes Steam Key LATAM",
+    "stock": 24,
+    "price": 18,
+    "category": "Pc",
+    "image": "../src/assets/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "FIFA 22 Ultimate Edition",
+    "description": "FIFA 22 Ultimate Edition Steam Key Global",
+    "stock": 52,
+    "price": 42,
+    "category": "Pc",
+    "image": "../src/assets/3.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Mortal Kombat 1 - Premium Edition",
+    "description": "Mortal Kombat 1 - Premium Edition Código de Xbox Live Global",
+    "stock": 12,
+    "price": 32,
+    "category": "Xbox",
+    "image": "../src/assets/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Halo: The Master Chief Collection",
+    "description": "Halo: The Master Chief Collection Código de Xbox Live Global",
+    "stock": 62,
+    "price": 48,
+    "category": "Xbox",
+    "image": "../src/assets/5.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Call of Duty: Black Ops 4",
+    "description": "Call of Duty: Black Ops 4 Código de Xbox Live Global",
+    "stock": 52,
+    "price": 45,
+    "category": "Xbox",
+    "image": "../src/assets/6.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Call of Duty: Modern Warfare II",
+    "description": "Call of Duty: Modern Warfare II PSN Key LATAM",
+    "stock": 24,
+    "price": 54,
+    "category": "PlayStation",
+    "image": "../src/assets/7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Marvel's Sipder-Man 2",
+    "description": "Marvel's Sipder-Man 2 PSN Key LATAM",
+    "stock": 14,
+    "price": 59,
+    "category": "PlayStation",
+    "image": "../src/assets/8.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "God of War Ragnarok",
+    "description": "God of War Ragnarok PSN Key Global",
+    "stock": 20,
+    "price": 40,
+    "category": "PlayStation",
+    "image": "../src/assets/9.jpeg"
+  }
+]

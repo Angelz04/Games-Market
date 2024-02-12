@@ -1,7 +1,11 @@
-.nav-link {
+.NavLink {
     margin-left: 4rem; 
 }
 
 .navbar{
     padding-bottom: 1rem;
+}
+
+.logo{
+    margin-top: 1rem;
 }

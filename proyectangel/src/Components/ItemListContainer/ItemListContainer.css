@@ -1,5 +1,131 @@
-h2{
+body {
+  background-color: rgb(41, 43, 44);
+}
+
+
+.card {
+  background-color: inherit; 
+  border: 1px solid #636413; 
+  border-radius: 5px; 
+  margin-bottom: 16px; 
+  text-align: center;
+}
+
+.card-img {
+    height: 360px; 
+    object-fit: cover; 
+  }
+  
+
+.card-body {
+  padding: 12px; 
+}
+
+.greeting-text {
+    font-size: 32px; 
+    color: white; 
+    margin-bottom: 48px; 
+    margin-top: 32px;
     text-align: center;
-    color: white;
-    padding-top: 5rem;
+  }
+
+.card-title {
+  font-size: 24px; 
+  margin-bottom: 12px;
+  color: white; 
+}
+
+.verDetalles {
+  background-color: #636413; 
+  color: #fff; 
+  border: none; 
+  padding: 5px 10px; 
+  cursor: pointer; 
+  border-radius: 3px; 
+}
+
+.verDetalles:hover {
+  background-color: #218838; 
+}
+
+.link{
+  color: #fff; 
+  text-decoration: none;
+}
+
+.item-title{
+  font-size: 24px; 
+  margin-bottom: 24px;
+  color: white;
+}
+
+.item-img{
+  height: 380px; 
+  width: 200px;
+    object-fit: cover; 
+}
+
+.item-p{
+  font-size: 16px; 
+  margin-bottom: 16px;
+  color: white;
+}
+
+.quantity-section {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: center;
+  color: white;
+}
+
+.quantity-button {
+  background-color: #636413;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.quantity {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.add-to-cart-button {
+  background-color: #636413;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838;
+}
+
+
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+}
+
+.spinner-container .spinner-border {
+  color: #ffffff; 
 }
