@@ -17,10 +17,6 @@ export default function ItemListContainer({ greeting }) {
     });
   }, [categoryId]);
 
-  const handleComprar = (id) => {
-    console.log(`Comprar producto con ID ${id}`);
-  };
-
   if (loading) {
     return (
       <div className="spinner-container">
@@ -40,7 +36,7 @@ export default function ItemListContainer({ greeting }) {
             <Card.Img variant="top" src={item.image} className="card-img" />
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
-              <Button className="verDetalles" variant="primary" onClick={() => handleComprar(item.id)}>
+              <Button className="verDetalles" variant="primary" onClick={() => (item.id)}>
                 <Link to={`/item/${item.id}`} className="link">Ver Detalles</Link>
               </Button>
             </Card.Body>
