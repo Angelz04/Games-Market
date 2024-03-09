@@ -12,3 +12,7 @@
 .cart-container{
     margin-right: none;
 }
+
+.cart-item-count{
+    color: white;
+}
