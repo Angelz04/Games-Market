@@ -1,14 +1,14 @@
-import { useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import productosJson from '../productos.json';
-import {Card, Spinner} from 'react-bootstrap';
+import { Card,  Spinner } from 'react-bootstrap';
+import { CartContext } from './CartContext'; 
 
-
-export default function ItemDetailContainer() {
+function ItemDetailContainer() {
   const { itemId } = useParams();
-  const [producto, setProducto] = useState();
-  const [cantidad, setCantidad] = useState(1); 
-  const [loading, setLoading] = useState(true); 
+  const [producto, setProducto] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [quantity, setQuantity] = useState(1); // Estado para la cantidad seleccionada
 
   useEffect(() => {
     const timer = setTimeout(() => { 
@@ -19,6 +19,13 @@ export default function ItemDetailContainer() {
 
     return () => clearTimeout(timer); 
   }, [itemId]);
+
+  const { addToCart } = useContext(CartContext); 
+
+  const handleAgregarAlCarrito = () => {
+    addToCart({ ...producto, quantity }); // Incluir la cantidad seleccionada al agregar al carrito
+    console.log(`Agregado al carrito: ${quantity} unidades de ${producto.name}`);
+  };
 
   if (loading) {
     return ( 
@@ -32,20 +39,6 @@ export default function ItemDetailContainer() {
 
   if (!producto) return null;
 
-  const handleAumentarCantidad = () => {
-    setCantidad(cantidad + 1);
-  };
-
-  const handleReducirCantidad = () => {
-    if (cantidad > 1) {
-      setCantidad(cantidad - 1);
-    }
-  };
-
-  const handleAgregarAlCarrito = () => {
-    console.log(`Agregado al carrito: ${cantidad} unidades de ${producto.name}`);
-  };
-
   return (
     <main className="item-detail">
       <div className="mx-auto" style={{ maxWidth: '400px' }}>
@@ -58,13 +51,12 @@ export default function ItemDetailContainer() {
                 <p className="item-p">Description: {producto.description}</p>
                 <p className="item-p">Stock: {producto.stock}</p>
                 <p className="item-p">Price: {producto.price}</p>
-                <p className="item-p">Category: {producto.category}</p>
                 <div className="quantity-section">
-                <button className="quantity-button" onClick={handleReducirCantidad}>-</button>
-                <span className="quantity">{cantidad}</span>
-                <button className="quantity-button" onClick={handleAumentarCantidad}>+</button>
-              </div>
-              <button className="add-to-cart-button" onClick={handleAgregarAlCarrito}>Add to Cart</button>
+                  <button className="quantity-button" onClick={() => setQuantity(quantity - 1)}>-</button>
+                  <span className="quantity">{quantity}</span>
+                  <button className="quantity-button" onClick={() => setQuantity(quantity + 1)}>+</button>
+                </div>
+                <button className="add-to-cart-button" onClick={handleAgregarAlCarrito}>Add to Cart</button>
               </section>
             </section>
           </Card.Body>
@@ -73,3 +65,5 @@ export default function ItemDetailContainer() {
     </main>
   );
 }
+
+export default ItemDetailContainer;

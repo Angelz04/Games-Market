@@ -11,38 +11,37 @@ export default function ItemListContainer({ greeting }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true); // Indicamos que la carga está en curso
     asyncMock(categoryId).then((res) => {
       setProductos(res);
-      setLoading(false);
+      setLoading(false); // Indicamos que la carga ha finalizado
     });
   }, [categoryId]);
-
-  if (loading) {
-    return (
-      <div className="spinner-container">
-        <Spinner animation="border" role="status">
-          <span className="sr-only">Loading...</span>
-        </Spinner>
-      </div>
-    );
-  }
 
   return (
     <main>
       <h2 className="greeting-text">{greeting}</h2>
-      <div className="d-flex flex-wrap justify-content-center">
-        {productos.map((item) => (
-          <Card key={item.id} className="m-5" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={item.image} className="card-img" />
-            <Card.Body>
-              <Card.Title>{item.name}</Card.Title>
-              <Button className="verDetalles" variant="primary" onClick={() => (item.id)}>
-                <Link to={`/item/${item.id}`} className="link">Ver Detalles</Link>
-              </Button>
-            </Card.Body>
-          </Card>
-        ))}
-      </div>
+      {loading ? ( // Mostramos el spinner si loading es true
+        <div className="spinner-container">
+          <Spinner animation="border" role="status">
+            <span className="sr-only">Loading...</span>
+          </Spinner>
+        </div>
+      ) : (
+        <div className="d-flex flex-wrap justify-content-center">
+          {productos.map((item) => (
+            <Card key={item.id} className="m-5" style={{ width: '18rem' }}>
+              <Card.Img variant="top" src={item.image} className="card-img" />
+              <Card.Body>
+                <Card.Title>{item.name}</Card.Title>
+                <Button className="verDetalles" variant="primary" onClick={() => (item.id)}>
+                  <Link to={`/item/${item.id}`} className="link">Ver Detalles</Link>
+                </Button>
+              </Card.Body>
+            </Card>
+          ))}
+        </div>
+      )}
     </main>
   );
 }
