@@ -6,7 +6,7 @@
     "stock": 50,
     "price": 36,
     "category": "Pc",
-    "image": "../src/assets/1.jpg"
+    "image": "https://cdn-products.eneba.com/resized-products/bXRUUblXKR-BlXnSIsUVR-jrJ1lnCSGA9qgbLh5L10Y_350x200_1x-0.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "stock": 24,
     "price": 18,
     "category": "Pc",
-    "image": "../src/assets/2.jpg"
+    "image": "https://cdn-products.eneba.com/resized-products/omy8grmzeljc32hfmdjr_350x200_1x-0.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "stock": 52,
     "price": 42,
     "category": "Pc",
-    "image": "../src/assets/3.jpeg"
+    "image": "https://cdn-products.eneba.com/resized-products/aZVburjOk80fasUmRT_R3JDmbr4xdzNxgHSNXa1viQQ_350x200_1x-0.jpeg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "stock": 12,
     "price": 32,
     "category": "Xbox",
-    "image": "../src/assets/4.jpg"
+    "image": "https://cdn-products.eneba.com/resized-products/UJa1e8LgXanrinab6TGhIMnOfhVToUsP4jK2KwM8s_4_350x200_1x-0.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "stock": 62,
     "price": 48,
     "category": "Xbox",
-    "image": "../src/assets/5.jpeg"
+    "image": "https://cdn-products.eneba.com/resized-products/v3RFXvbXeIxulY5PkZBi8m25_aCr2FockUgc7MGfjOo_350x200_1x-0.jpeg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "stock": 52,
     "price": 45,
     "category": "Xbox",
-    "image": "../src/assets/6.jpeg"
+    "image": "https://cdn-products.eneba.com/resized-products/6AarYaiXOnenWbGb1cFqZprzrlh-xyFQRgJN7FNyJ08_350x200_1x-0.jpeg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "stock": 24,
     "price": 54,
     "category": "PlayStation",
-    "image": "../src/assets/7.jpg"
+    "image": "https://cdn-products.eneba.com/resized-products/vg4JymhVYlrsuyH_RvTgdRqmVoEUqz5XqAB7hUcHgp4_350x200_1x-0.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "stock": 14,
     "price": 59,
     "category": "PlayStation",
-    "image": "../src/assets/8.jpeg"
+    "image": "https://cdn-products.eneba.com/resized-products/zvgANbZx9d5gtMFT6ME6ntFeA5uzXdsEObDJdxeZ1-Q_350x200_1x-0.jpg"
   },
   {
     "id": 9,
@@ -78,6 +78,6 @@
     "stock": 20,
     "price": 40,
     "category": "PlayStation",
-    "image": "../src/assets/9.jpeg"
+    "image": "https://cdn-products.eneba.com/resized-products/NjuT6XzO0fs0Lbdbe4jBMt3m3EsGOgJh7bU9fQurfKI_350x200_1x-0.jpeg"
   }
 ]
